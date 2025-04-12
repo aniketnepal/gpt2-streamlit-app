@@ -1,4 +1,3 @@
-!pip install torch
 import streamlit as st
 from transformers import GPT2LMHeadModel, GPT2Tokenizer, Trainer, TrainingArguments
 from datasets import load_dataset
