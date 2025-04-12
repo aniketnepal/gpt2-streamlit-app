@@ -50,7 +50,7 @@ model = fine_tune_model(model, tokenizer)
 
 # Streamlit UI
 st.title("GPT-2 Story Generator")
-prompt = st.text_area("Enter your story prompt:", "In an enchanted forest, a mysterious traveler")
+prompt = st.text_area("Enter your story prompt:")
 
 if st.button("Generate"):
     inputs = tokenizer.encode(prompt, return_tensors="pt")
